@@ -1,5 +1,5 @@
 import React from "react";
-import toast from "react-hot-toast";
+import toast ,{Toaster}from "react-hot-toast";
 import vector from "../assets/Vector.png";
 import Ellipse198 from "../assets/Ellipse 198.png";
 import Ellipse196 from "../assets/Ellipse 196.png";
@@ -42,7 +42,7 @@ const NotificationScreen = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-700">
-
+      <Toaster position="top-right" />
       <div className="bg-gradient-to-b from-[#2C2143] to-black p-8 shadow-md w-[392px] h-[821px] relative">
         {/* Centered "Hola!" */}
         <p className="flex items-center justify-center w-[40px] h-[21px] text-white absolute top-[32px] left-1/2 transform -translate-x-1/2">
