@@ -4,6 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 import { Toaster } from "react-hot-toast";
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -14,3 +16,5 @@ root.render(
     </BrowserRouter>
   
 );
+serviceWorkerRegistration.register();
+
